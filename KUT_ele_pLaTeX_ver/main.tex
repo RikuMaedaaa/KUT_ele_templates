@@ -101,6 +101,7 @@
 
 % === 表紙 === %
 \include{cover}
+\cleardoublepage
 
 % === 目次 === %
 \setcounter{page}{0}\pagenumbering{roman}\pagestyle{headtypeTofCstyle}
@@ -109,8 +110,7 @@
 % \listoftables
 
 % === 表目次のページ番号がローマ数字にならないバグの回避 === %
-\newpage
-\clearpage
+\cleardoublepage
 
 % === 各種設定 === %
 \graphicspath{{./figures/}} % グラフのあるパス
