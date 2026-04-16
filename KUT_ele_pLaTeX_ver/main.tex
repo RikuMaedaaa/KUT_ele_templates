@@ -16,17 +16,17 @@
 \usepackage[haranoaji]{pxchfon}                  % フォント指定（[ms]: MS, [ipaex]: IPAexフォント）
 \usepackage[deluxe]{otf}                         % 多書体化
 \usepackage[margin=25truemm]{geometry}           % 余白設定（2023年度 Wordのテンプレートに準拠）
-% \usepackage{cite}                                % （↓があるときはコメントアウト）参考文献をBibTeXでIEEEスタイルにする
-\usepackage[%
-  bibstyle=ieee,
-  citestyle=numeric-comp,
-  sorting=none,
-  doi=false,
-  eprint=false,
-  url=true%
-]{biblatex}                                      % （↑があるときはコメントアウト）参考文献をBibLaTeXでIEEEスタイルにする
+\usepackage{cite}                                % （↓があるときはコメントアウト）参考文献をBibTeXでIEEEスタイルにする
+% \usepackage[%
+%   bibstyle=ieee,
+%   citestyle=numeric-comp,
+%   sorting=none,
+%   doi=false,
+%   eprint=false,
+%   url=true%
+% ]{biblatex}                                      % （↑があるときはコメントアウト）参考文献をBibLaTeXでIEEEスタイルにする
 % ======== bibLaTeXのファイルとオプション設定 ============ %
-\addbibresource{references.bib} % bibファイルを拡張子つきで書く
+% \addbibresource{references.bib} % bibファイルを拡張子つきで書く
 % ======== ハイパーリンクの設定 by hyperref ========= %
 \hypersetup{
   setpagesize=false,
@@ -131,9 +131,10 @@
 % == 参考文献
 \pagestyle{headtypestylePlain} % ノンブル・柱の設定
 \addcontentsline{toc}{chapter}{参考文献}
-\printbibliography[title={参考文献}]  % 参考文献を表示 (biblatex)
+% \printbibliography[title={参考文献}]  % 参考文献を表示 (biblatex)
 % \bibliographystyle{jIEEEtran}  % 参考文献を表示 (bibtex, jIEEEtran.bstを使う場合)
-% \bibliography{references}      % 参考文献を表示 (bibtex, .bibは省略)
+\bibliographystyle{junsrt}     % 参考文献を表示 (bibtex, jIEEEtran.bstを使わない場合)
+\bibliography{references}      % 参考文献を表示 (bibtex, .bibは省略)
 
 % == ヘッダー・フッターのバグ回避
 \newpage
