@@ -1,6 +1,6 @@
 # 2026年度 高知工科大学 電子系 卒業論文・特別研究報告の LaTeX テンプレート（非公式）
 このテンプレートは2026年度高知工科大学電子系の卒業論文・特別研究報告書作成のためのLaTeXテンプレート（非公式）です．
-ダウンロードは，右上の「Code」ボタンから「Download ZIP」をクリックすればできます．
+ダウンロードは，右上の「Code」ボタンから「Download ZIP」をクリック，または，右下の「Releases」ボタンからダウンロードできます．
 
 ## <span style="color: red; ">注意点</span>
 このテンプレートは2026年度高知工科大学電子系の卒業論文・修士論文の要件を満たすように作成したつもりですが、今一度[KUTLMS](https://lms.kochi-tech.ac.jp/)で学位論文の要件を確認して下さい．
@@ -15,7 +15,8 @@ MITライセンスに変更しました（2023年11月29日23:00）．
 特に，LaTeXを使う頻度が少ない場合はコマンドを覚えることが困難なため**オンラインで執筆することをお勧め**します．
 作成者の知る範囲では[Overleaf](https://www.overleaf.com)と[CloudLaTeX](https://cloudlatex.io)をよく聞きます．
 Overleafは世界で使われる有名なWebサービスで，CloudLaTeXは株式会社アカリクという日本の企業が運営しているWebサービスです．
-作成者個人の意見としては**Overleafがお勧め**です（上にある横長のメニュー画面（?）で表や図のアイコンを押して操作するだけで挿入できるため）．
+~~作成者個人の意見としては**Overleafがお勧め**です（上にある横長のメニュー画面（?）で表や図のアイコンを押して操作するだけで挿入できるため）．~~
+Overleafのコンパイル時間の制限が厳しくなったため，CloudLaTeXをおすすめします．
 
 また，テンプレートはLuaTeX版とpLaTeX版の内，Unicodeが使える**LuaTeX版をお勧め**します．
 とはいえ，もし学位論文の分量が多くてランタイムエラーが起こるなら**pLaTeX版**を試してみてください．
@@ -30,9 +31,14 @@ Overleafは世界で使われる有名なWebサービスで，CloudLaTeXは株�
 - README.md: このファイルのことです．
 
 ## 動作確認
-- Windows10, Windows11での[Visual Studio Code](https://code.visualstudio.com/)（[TeX Live](https://texwiki.texjp.org/?TeX%20Live)2023でインストールしていることが前提）．Visual Studio Codeはただのエディタなので他でも設定をすれば動くと思います．
+- Windows11 [TeX Live](https://texwiki.texjp.org/?TeX%20Live) 2026
+- Ubuntu 24.04 TeX Live 2023
+- Ubuntu 26.04 TeX Live 2025
 - [Overleaf](https://www.overleaf.com)
-- [CloudLaTeX](https://cloudlatex.io)で2023年11月現在確認済み
+  - 無料版で使用する場合KUT_ele_pLaTeX_verを使用してください．コンパイル時に`Compile mode`を`Fast[draft]`に変更し図表以外をコンパイルした後，`Normal`に戻すとタイムアウトせずコンパイルできます．
+  - KUT_ele_LuaTeX_verは上記の方法でも無料版のタイムアウトを回避できませんでした．
+- Overleaf Community Edition 6.3.0
+- [CloudLaTeX](https://cloudlatex.io)
 
 ## 連絡事項
 FAQとQ&Aの作成中．メールや[Webex](https://www.webex.com/ja/index.html)で質問受付中です！
@@ -51,6 +57,11 @@ FAQとQ&Aの作成中．メールや[Webex](https://www.webex.com/ja/index.html)
     - 要件が同じなので気にする必要は無いが，2023_KUT_ele_templatesは v.1.0.0 ~ v.1.2.0．
 * 2026年 1月 5日
   - 2025年度から表紙のレイアウトが変更された v.1.2.2の2025_KUT_ele_templates
+* 2026年 4月12日
+  - 管理者とURLが変更になりました．
+* 2026年 4月16日
+  - biblatexからbibtexに変更しました．binlatexを使いたい場合は`git revert eec8b20450ae117235d72176fe0c7ab6e2b32da1  7311e80d23e48a85e1ee3b12388fb78df37113bb`を実行してください．
+
 ## 問い合わせ先
 高知工科大学大学院 工学研究科基盤工学専攻 1年　前田凜空 (2026年4月現在)
 
