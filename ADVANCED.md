@@ -26,7 +26,7 @@ Windows11とUbuntu 24.04で動作確認済みです。
 ## WSLに TeX Live をインストールする
 Windows上で以下のコマンドを実行し、WSLと Ubuntu のインストールを行います。
 ```
-wsl install -d Ubuntu-24.04
+wsl --install Ubuntu-24.04
 ```
 その後、WSL（Ubuntu-24.04）のシェルで以下を実行して TeX Live をインストールします。
 ```
