@@ -10,8 +10,8 @@
 *.synctex.gz
 *.toc
 *.dvi
-KUT_ele_LuaTeX_ver/out/
-KUT_ele_LuaTeX_ver/main.pdf
-KUT_ele_pLaTeX_ver/out/
-KUT_ele_pLaTeX_ver/main.pdf
+*.pdf
+out/
+!KUT_ele_pLaTeX_ver.pdf
+!KUT_ele_LuaTeX_ver.pdf
 jIEEEtran.bst
